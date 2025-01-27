@@ -102,3 +102,10 @@ local Button9 = Tab1:CreateButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/RubuRoblox/refs/heads/main/RubuBF"))()
    end,
 })
+
+local Button10 = Tab1:CreateButton({
+    Name = "Load Volcano",
+    Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/wpisstestfprg/Volcano/refs/heads/main/VolcanoLocal.lua", true))()
+    end,
+})
