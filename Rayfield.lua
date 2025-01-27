@@ -72,7 +72,7 @@ local Button5 = Tab1:CreateButton({
        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
    end,
 })
-local Button8 = Tab1:CreateButton({
+local Button6 = Tab1:CreateButton({
    Name = "Load BapRed",
    Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/BapRed/main/BapRedHub"))()
@@ -85,14 +85,14 @@ local Button7 = Tab1:CreateButton({
    end,
 })
 local Button8 = Tab1:CreateButton({
-   Name = "",
+   Name = "Load HoHo",
    Callback = function()
-   
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
    end,
 })
 local Button9 = Tab1:CreateButton({
-   Name = "",
+   Name = "Load RuBu",
    Callback = function()
-   
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/RubuRoblox/refs/heads/main/RubuBF"))()
    end,
 })
