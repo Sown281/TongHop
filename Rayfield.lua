@@ -64,6 +64,33 @@ local Button4 = Tab1:CreateButton({
    end,
 })
 local Button5 = Tab1:CreateButton({
+   Name = "Load Xero",
+   Callback = function()
+       getgenv().Team = "Pirates"
+       getgenv().Hide_Menu = false
+       getgenv().Auto_Execute = false
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
+   end,
+})
+local Button8 = Tab1:CreateButton({
+   Name = "Load BapRed",
+   Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/BapRed/main/BapRedHub"))()
+   end,
+})
+local Button7 = Tab1:CreateButton({
+   Name = "Load Strix(key)",
+   Callback = function()
+        loadstring(game:HttpGet"https://scriptroblox.onrender.com/strix")()
+   end,
+})
+local Button8 = Tab1:CreateButton({
+   Name = "",
+   Callback = function()
+   
+   end,
+})
+local Button9 = Tab1:CreateButton({
    Name = "",
    Callback = function()
    
