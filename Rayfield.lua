@@ -21,7 +21,7 @@ local Window = Rayfield:CreateWindow({
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
 
-   KeySystem = false, -- Set this to true to use our key system
+   KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
       Title = "Key system",
       Subtitle = "Đoán xem",
@@ -42,6 +42,30 @@ local Button1 = Tab1:CreateButton({
 local button2 = Tab1:CreateButton({
     Name = "Load W-azure"
     Callback = function()
-        .
+        getgenv().Team = "Pirates"
+        getgenv().AutoLoad = false --Will Load Script On Server Hop
+        getgenv().SlowLoadUi  = false
+        getgenv().ForceUseSilentAimDashModifier = false --Force turn on silent aim , if error then executor problem
+        getgenv().ForceUseWalkSpeedModifier = false --Force turn on Walk Speed Modifier , if error then executor problem
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
     end,
+})
+local Button3 = Tab1:CreateButton({
+   Name = "Load Quantum Onyx",
+   Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FlazhGG/QTONYX/refs/heads/main/NextGeneration.lua"))()
+   end,
+})
+local Button4 = Tab1:CreateButton({
+   Name = "Load AnDepZai",
+   Callback = function()
+        repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AnDepZaiHub/AnDepZaiHubBeta/refs/heads/main/AnDepZaiHubNewUpdated.lua"))()
+   end,
+})
+local Button5 = Tab1:CreateButton({
+   Name = "",
+   Callback = function()
+   
+   end,
 })
