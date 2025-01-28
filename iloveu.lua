@@ -33,6 +33,7 @@ Tab:AddButton({
     Name = "Load Redz",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
+        print("Loaded redz")
   end    
 })
 
@@ -45,6 +46,7 @@ Tab:AddButton({
         getgenv().ForceUseSilentAimDashModifier = false
         getgenv().ForceUseWalkSpeedModifier = false
         loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+        print("Loaded W-azure")
   end    
 })
 
@@ -54,6 +56,7 @@ Tab:AddButton({
     Callback = function()
         repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AnDepZaiHub/AnDepZaiHubBeta/refs/heads/main/AnDepZaiHubNewUpdated.lua"))()
+        print("Loaded AnDepZai")
   end    
 })
 
@@ -61,6 +64,7 @@ Tab:AddButton({
     Name = "Load Quantum Onyx",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/FlazhGG/QTONYX/refs/heads/main/NextGeneration.lua"))()
+        print("Loaded Quantum Onyx")
   end
 }) 
 
@@ -71,5 +75,46 @@ Tab:AddButton({
         getgenv().Hide_Menu = false
         getgenv().Auto_Execute = false
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
-        end
+        print("Loaded Xero")
+  end
+})
+
+Tab:AddButton({
+    Name = "Load HoHo ver4(KEY)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+        print("Loaded HoHo ver4")
+  end
+})
+
+Tab:AddButton({
+    Name = "Load Strix(KEY),
+    Callback = function()
+        loadstring(game:HttpGet("https://scriptroblox.onrender.com/strix"))()
+        print("Loaded strix")
+  end
+})
+
+Tab:AddButton({
+    Name = "Load Vocalno",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/wpisstestfprg/Volcano/refs/heads/main/VolcanoLocal.lua", true))()
+        print("Loaded Vocalno")
+  end
+})
+
+Tab:AddButton({
+    Name = "Load Bapred",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/BapRed/main/BapRedHub"))()
+        print("Loaded Bapred")
+  end
+})
+
+Tab:AddButton({
+    Name = "Load Rubu",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/RubuRoblox/refs/heads/main/RubuBF"))()
+        print("Loaded Rubu")
+  end
 })
