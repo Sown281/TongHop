@@ -88,7 +88,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-    Name = "Load Strix(KEY),
+    Name = "Load Strix(KEY)",
     Callback = function()
         loadstring(game:HttpGet("https://scriptroblox.onrender.com/strix"))()
         print("Loaded strix")
