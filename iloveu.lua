@@ -9,6 +9,11 @@ local Window = OrionLib:MakeWindow({
 })
 local Tab = Window:MakeTab({
     Name = "BloxKid",
-    Icon = "rbxassetid://1",
+    Icon = "apple",
     PremiumOnly = false
+})
+Tab:AddButton({
+    Name = "Load Redz",
+    Callback = loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
+    end
 })
