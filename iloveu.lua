@@ -56,3 +56,20 @@ Tab:AddButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AnDepZaiHub/AnDepZaiHubBeta/refs/heads/main/AnDepZaiHubNewUpdated.lua"))()
   end    
 })
+
+Tab:AddButton({
+    Name = "Load Quantum Onyx",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FlazhGG/QTONYX/refs/heads/main/NextGeneration.lua"))()
+  end
+}) 
+
+Tab:AddButton({
+    Name = "Load Xero",
+    Callback = function()
+        getgenv().Team = "Pirates"
+        getgenv().Hide_Menu = false
+        getgenv().Auto_Execute = false
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
+        end
+})
