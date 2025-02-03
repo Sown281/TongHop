@@ -23,6 +23,31 @@ Tabs.Bloxkid:AddParagraph({
         Title = "lưu ý",
         Content = "Các script dưới đây chưa được kiểm tra và có thể ko hoạt động trong 1 số điều kiện nhất định"
     })
+Tabs.Bloxkid:AddButton({
+        Title = "Load redz 1",
+        Description = "redz real ko chỉnh sửa",
+        Callback = function()
+            Window:Dialog({
+                Title = "Load redz?",
+                Content = "Yes or no",
+                Buttons = {
+                    {
+                        Title = "Yes",
+                        Callback = function()
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Didnt load redz")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
 Tabs.Main:AddButton({
         Title = "Button",
         Description = "Very important button",
