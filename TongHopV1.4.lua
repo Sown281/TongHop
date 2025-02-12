@@ -16,7 +16,7 @@ local Tab = Window:MakeTab({
     PremiumOnly = false
 })
 
-Tab:AddLabel("Scripts below are keyless!")
+Tab:AddLabel("Scripts below are KEYLESS!")
 
 Tab:AddButton({
 	Name = "Load Redz",
@@ -86,7 +86,7 @@ Tab:AddButton({
   	end    
 })
 
-CoolLabel:Set("Scripts below have key system")
-
+Tab:AddLabel("Scripts below have KEY SYSTEM!")
+Tab:AddLabel("please wait for me to update the script")
 -- Never forget to add this when using Orion Library
 OrionLib:Init()
