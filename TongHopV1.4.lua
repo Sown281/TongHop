@@ -77,5 +77,12 @@ Tab:AddButton({
   	end    
 })
 
+Tab:AddButton({
+	Name = "Load Bapred",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/BapRed/main/BapRedHub"))()
+  	end    
+})
+
 -- Never forget to add this when using Orion Library
 OrionLib:Init()
