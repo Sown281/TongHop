@@ -16,6 +16,8 @@ local Tab = Window:MakeTab({
     PremiumOnly = false
 })
 
+Tab:AddLabel("Scripts below are keyless!")
+
 Tab:AddButton({
 	Name = "Load Redz",
 	Callback = function()
@@ -83,6 +85,8 @@ Tab:AddButton({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/BapRed/main/BapRedHub"))()
   	end    
 })
+
+CoolLabel:Set("Scripts below have key system")
 
 -- Never forget to add this when using Orion Library
 OrionLib:Init()
