@@ -1,4 +1,4 @@
- local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sown281/SomeUI/refs/heads/main/OrionNew.lua"))()
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sown281/SomeUI/refs/heads/main/OrionNew.lua"))()
 
 local Window = OrionLib:MakeWindow({
     Name = "TongHop | V1.4",
@@ -50,6 +50,30 @@ Tab:AddButton({
 	Callback = function()
       		repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AnDepZaiHub/AnDepZaiHubBeta/refs/heads/main/AnDepZaiHubNewUpdated.lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Load Quantum Onyx",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/FlazhGG/QTONYX/refs/heads/main/NextGeneration.lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Load Xero",
+	Callback = function()
+      		getgenv().Team = "Pirates"
+        getgenv().Hide_Menu = false
+        getgenv().Auto_Execute = false
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Load Volcano",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/wpisstestfprg/Volcano/refs/heads/main/VolcanoLocal.lua", true))()
   	end    
 })
 
