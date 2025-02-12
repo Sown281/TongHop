@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Sown281/SomeUI/refs/heads/main/OrionNew.lua")))()
+ local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sown281/SomeUI/refs/heads/main/OrionNew.lua"))()
 
 local Window = OrionLib:MakeWindow({
     Name = "TongHop | V1.4",
